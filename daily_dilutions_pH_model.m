@@ -8,7 +8,7 @@ dp_dt = @(n,p,b1,b2,al,K,p_opt_vec,pc,sig2) al*b1*sum( dn_dt_p(n,p,al,K,p_opt_ve
    (dn_dt_p(n,p,al,K,p_opt_vec,pc,sig2)>0) ) + al*b2*sum(n);
 
 S = 60; 
-b1 = 3; 
+b1 = 0.3; 
 b2 = b1/3; pc = 0.6; sig2 = 1;
 K = 1; % total capacity
 al = 1;
